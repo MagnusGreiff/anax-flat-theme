@@ -1,4 +1,7 @@
 /** 
+* Anax Flat theme.
+*/
+/** 
  * Base theme including all modules needed.
  *
  * Each module is within its own
@@ -7,10 +10,14 @@
  * be override modules/some-module.less. This is useful when several themes
  * the same modules.
  */
-// Reset, or normalize the browser style
-@import url(normalize.less);
-// Basic region structure
-@import url(regions.less);
-// Responsive menu
-@import url(responsive-menu.less);
-
+/** --------------------------------------------------------------
+ *  Logo images
+ */
+.logo-1 {
+  position: absolute;
+  top: 70px;
+  left: -140px;
+}
+.site-logo-text-icon img {
+  vertical-align: bottom;
+}
