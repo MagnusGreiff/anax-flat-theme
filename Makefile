@@ -164,3 +164,9 @@ upgrade-responsive-menu:
 upgrade: upgrade-normalize upgrade-responsive-menu
 	@$(call HELPTEXT,$@)
 
+# target: upgrade-grid
+.PHONY: upgrade-grid
+upgrade-grid:
+	@$(call HELPTEXT,$@)
+	wget --quiet https://raw.githubusercontent.com/dbwebb-se/design/master/example/grid/fluid/less/grid-float.less -O grid-float.less
+	wget --quiet https://raw.githubusercontent.com/dbwebb-se/design/master/example/grid/fluid/less/grid-flex.less -O grid-flex.less
