@@ -1235,6 +1235,278 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .route-typography .flash-wrap img {
   height: 140px;
 }
+.route-typography .content {
+  font: 100.01%/1.5 Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.route-typography .content h1,
+.route-typography .content h2,
+.route-typography .content h3,
+.route-typography .content h4,
+.route-typography .content h5,
+.route-typography .content h6 {
+  font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.route-typography .content h1 img,
+.route-typography .content h2 img,
+.route-typography .content h3 img,
+.route-typography .content h4 img,
+.route-typography .content h5 img,
+.route-typography .content h6 img {
+  margin: 0;
+}
+.route-typography .content h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+  margin-bottom: 23px;
+}
+.route-typography .content h1 ~ h1,
+.route-typography .content h1 ~ h2,
+.route-typography .content h1 ~ h3,
+.route-typography .content h1 ~ h4,
+.route-typography .content h1 ~ h5,
+.route-typography .content h1 ~ h6 {
+  margin-top: 48px;
+}
+.route-typography .content h1 + h2 {
+  margin-top: 24px;
+}
+.route-typography .content h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-top: 48px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #999;
+}
+.route-typography .content h2 + h3 {
+  margin-top: 24px;
+}
+.route-typography .content h3 {
+  font-size: 1.375em;
+  line-height: 1.09090909;
+  font-weight: normal;
+}
+.route-typography .content h4 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.route-typography .content h5 {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.route-typography .content h6 {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+}
+.route-typography .content p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.route-typography .content small,
+.route-typography .content .small,
+.route-typography .content .smaller {
+  font-size: 0.875em;
+}
+.route-typography .content strong,
+.route-typography .content b {
+  font-weight: bold;
+}
+.route-typography .content mark {
+  color: #000;
+  background-color: #ffff99;
+}
+.route-typography .content abbr[title],
+.route-typography .content dfn[title] {
+  text-decoration: dotted underline;
+}
+.route-typography .content em,
+.route-typography .content i,
+.route-typography .content dfn {
+  font-style: italic;
+}
+.route-typography .content sub,
+.route-typography .content sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.route-typography .content sup {
+  top: -0.5em;
+}
+.route-typography .content sub {
+  bottom: -0.25em;
+}
+.route-typography .content blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+.route-typography .content pre,
+.route-typography .content code,
+.route-typography .content kbd,
+.route-typography .content samp,
+.route-typography .content .code {
+  font-size: 1.25em;
+  font-family: monospace;
+}
+.route-typography .content code,
+.route-typography .content samp {
+  border: 1px solid #ccc;
+}
+.route-typography .content code {
+  background-color: #eee;
+}
+.route-typography .content pre,
+.route-typography .content div.code,
+.route-typography .content pre code {
+  font-size: 1.25em;
+  line-height: 1.6;
+  white-space: pre;
+}
+.route-typography .content pre {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.route-typography .content pre code {
+  display: block;
+  overflow: auto;
+}
+.route-typography .content div.code,
+.route-typography .content pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+.route-typography .content ul,
+.route-typography .content ol {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+.route-typography .content ul p,
+.route-typography .content ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.route-typography .content ul ul,
+.route-typography .content ol ul,
+.route-typography .content ul ol,
+.route-typography .content ol ol {
+  margin: 0;
+}
+.route-typography .content ul {
+  list-style-type: disc;
+}
+.route-typography .content ol {
+  list-style-type: decimal;
+}
+.route-typography .content dl {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.route-typography .content dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+.route-typography .content dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+.route-typography .content dd {
+  margin-left: 1.5em;
+}
+.route-typography .content article table,
+.route-typography .content .table,
+.route-typography .content .table1,
+.route-typography .content .table2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.route-typography .content table.full-width,
+.route-typography .content article .table,
+.route-typography .content .table,
+.route-typography .content .table2 {
+  width: 100%;
+}
+.route-typography .content article table,
+.route-typography .content .table,
+.route-typography .content .table2 {
+  border-collapse: collapse;
+}
+.route-typography .content article table caption,
+.route-typography .content .table caption,
+.route-typography .content .table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+.route-typography .content article table thead,
+.route-typography .content .table thead,
+.route-typography .content .table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+.route-typography .content article table th,
+.route-typography .content .table th,
+.route-typography .content .table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+.route-typography .content article table th,
+.route-typography .content .table th,
+.route-typography .content .table2 th,
+.route-typography .content article table td,
+.route-typography .content .table td,
+.route-typography .content .table2 td {
+  padding: 6px;
+}
+.route-typography .content article table tr,
+.route-typography .content .table tr,
+.route-typography .content .table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+.route-typography .content article table tr:hover,
+.route-typography .content .table tr:hover,
+.route-typography .content .table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+.route-typography .content table.striped tbody tr:nth-child(even) td,
+.route-typography .content table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+.route-typography .content hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+.route-typography .content hr:after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
 .route-typography .article {
   display: inline;
   float: left;
@@ -1541,6 +1813,14 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 }
 .route-typography .article pre {
   margin-top: -6px;
+}
+.route-typography .article h4 {
+  margin-bottom: 30px;
+}
+@media (min-width: 1400px) {
+  .route-typography .article h4 {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 700px) {
   .route-typography .article h1 {
