@@ -1,0 +1,39 @@
+@import url(style.less);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oxygen');
+
+@navbarLiColor: white;
+@backgroundColor: white;
+@mainBackgroundColor: white;
+@breadCrumbColor: white;
+@pColor: #404040;
+@headerColor: #404040;
+@bylineColor: white;
+@footerColumnColor: white;
+@siteFooterColor: white;
+@borderColor: black;
+@aColor: black;
+@NavAColor: black;
+
+@fontHeader: 'Bungee Inline', cursive;
+@fontBody: 'Oxygen', sans-serif;
+@fontFamilyHeadings: @fontHeader;
+@fontFamilyBody: @fontBody;
+
+
+body {
+  .font();
+  .typographyHeadings();
+  .typographyTextElements();
+  .typographyCodeElements();
+  .typographyListElements();
+  .typographyTableElements();
+  .typographyOtherElements();
+}
+
+.bungee {
+  font-family: @fontHeader;
+}
+
+.oxygen {
+  font-family: @fontBody;
+}
