@@ -433,6 +433,26 @@
   }
 }
 
+.route-blogg {
+  .column(12);
+  .column(12);
+  .sidebar {
+    .column(3);
+  }
+  .main {
+    .column(9);
+  }
+
+  @media (max-width: 715px) {
+    .sidebar{
+      display: none;
+    }
+    .main {
+      .column(12);
+    }
+  }
+}
+
 .route-theme {
   .column(12);
 }
