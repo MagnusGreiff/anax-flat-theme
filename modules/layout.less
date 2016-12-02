@@ -414,8 +414,23 @@
   }
 }
 
-.route-analysis-colorscheme {
+.route-analysis-colorscheme, .route-analysis-speed-and-usability, .route-analysis-intro, .route-analysis {
   .column(12);
+  .sidebar {
+    .column(3);
+  }
+  .main {
+    .column(9);
+  }
+
+  @media (max-width: 1000px) {
+    .sidebar{
+      .column(12);
+    }
+    .main {
+      .column(12);
+    }
+  }
 }
 
 .route-theme {
