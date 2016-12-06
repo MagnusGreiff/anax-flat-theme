@@ -1,0 +1,67 @@
+@import url(style.less);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oxygen');
+@import url('http://www.w3schools.com/lib/w3.css');
+
+@navbarLiColor: white;
+@backgroundColor: white;
+@mainBackgroundColor: white;
+@breadCrumbColor: white;
+@pColor: #404040;
+@headerColor: #404040;
+@bylineColor: white;
+@footerColumnColor: white;
+@siteFooterColor: white;
+@borderColor: black;
+@aColor: black;
+@NavAColor: black;
+
+@fontHeader: 'Bungee Inline', cursive;
+@fontBody: 'Oxygen', sans-serif;
+@fontFamilyHeadings: @fontHeader;
+@fontFamilyBody: @fontBody;
+
+
+body {
+  .font();
+  .typographyHeadings();
+  .typographyTextElements();
+  .typographyCodeElements();
+  .typographyListElements();
+  .typographyTableElements();
+  .typographyOtherElements();
+}
+
+.bungee {
+  font-family: @fontHeader;
+}
+
+.oxygen {
+  font-family: @fontBody;
+}
+img {
+  -webkit-animation:spin 0.5s linear;
+  -moz-animation:spin 0.51s linear;
+  animation:spin 0.5s linear;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.flash-wrap img {
+  -webkit-animation: none;
+  -moz-animation: none ;
+  -o-animation: none;
+  animation: none ;
+}
+
+.main p, .route-report-kmom01 article, .route-report-kmom02 article, .route-report-kmom03 article, .route-report-kmom04 article, .route-report-kmom05 article, .route-report-kmom06 article, .route-report-kmom10 article, p , .content p, .navbar2 a, .sidebar a, .breadcrumb-list a, .next-previous a, .footer a, .main ul li, .main pre, .main blockquote{
+  opacity: 1;
+  animation: fade 2s;
+}
+
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  100% { opacity: 1 }
+}

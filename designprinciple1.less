@@ -1,0 +1,103 @@
+@import url(style.less);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oxygen');
+
+@navbarLiColor: white;
+@backgroundColor: white;
+@mainBackgroundColor: white;
+@breadCrumbColor: white;
+@pColor: #404040;
+@headerColor: #404040;
+@bylineColor: white;
+@footerColumnColor: white;
+@siteFooterColor: white;
+@borderColor: black;
+@aColor: black;
+@NavAColor: black;
+
+@fontHeader: 'Bungee Inline', cursive;
+@fontBody: 'Oxygen', sans-serif;
+@fontFamilyHeadings: @fontHeader;
+@fontFamilyBody: @fontBody;
+
+
+body {
+  .font();
+  .typographyHeadings();
+  .typographyTextElements();
+  .typographyCodeElements();
+  .typographyListElements();
+  .typographyTableElements();
+  .typographyOtherElements();
+}
+
+.bungee {
+  font-family: @fontHeader;
+}
+
+.oxygen {
+  font-family: @fontBody;
+}
+
+
+body h1 {
+  border-bottom: 5px solid black;
+}
+
+main p , .content p{
+  border-bottom: 3px solid black;
+}
+
+.route- main p:last-of-type {
+  border: none;
+}
+
+.content p:first-of-type {
+  border: none;
+}
+
+.route-report-kmom01 article, .route-report-kmom02 article, .route-report-kmom03 article, .route-report-kmom04 article, .route-report-kmom05 article, .route-report-kmom06 article, .route-report-kmom10 article{
+  h4:nth-of-type(1) {
+    border-right:3px solid black;
+  }
+  h4:nth-of-type(2) {
+    border-left: 3px solid black;
+  }
+  h4:nth-of-type(3) {
+    border-right: 3px solid black;
+  }
+  h4:nth-of-type(4) {
+    border-left:3px solid black;
+  }
+  h4:nth-of-type(5) {
+    border-right:3px solid black;
+  }
+  h4:nth-of-type(6) {
+    border-left: 3px solid black;
+  }
+  p:nth-of-type(2) {
+    border-right: 3px solid black;
+  }
+  p:nth-of-type(3) {
+    border-left: 3px solid black;
+  }
+  p:nth-of-type(4) {
+    border-right:3px solid black;
+  }
+  p:nth-of-type(5) {
+    border-left: 3px solid black;
+  }
+  p:nth-of-type(6) {
+    border-right:3px solid black;
+  }
+  p:nth-of-type(7) {
+    border-left:3px solid black;
+  }
+
+}
+
+.route-report-kmom05 article {
+  h4:last-of-type {
+    border-left:none;
+    border-right:3px solid black;
+  }
+}
