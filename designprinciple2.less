@@ -38,6 +38,14 @@ body {
 .oxygen {
   font-family: @fontBody;
 }
+
+.flash-wrap img, .route-blogg img, .route-blogg-andra_blogginlagget img, .route-blogg-fjarde_blogginlagget img, .route-blogg-tredje_blogginlagget img, .route-blogg-mitt-forsta-blogginlagg img, .route-images img, .route-design-principle img, .route-analysis-colorscheme img, .route-analysis-speed-and-usability img{
+  -webkit-animation: none;
+  -moz-animation: none ;
+  -o-animation: none;
+  animation: none ;
+}
+
 img {
   -webkit-animation:spin 0.5s linear;
   -moz-animation:spin 0.51s linear;
@@ -48,12 +56,6 @@ img {
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-.flash-wrap img {
-  -webkit-animation: none;
-  -moz-animation: none ;
-  -o-animation: none;
-  animation: none ;
-}
 
 .main p, .route-report-kmom01 article, .route-report-kmom02 article, .route-report-kmom03 article, .route-report-kmom04 article, .route-report-kmom05 article, .route-report-kmom06 article, .route-report-kmom10 article, p , .content p, .navbar2 a, .sidebar a, .breadcrumb-list a, .next-previous a, .footer a, .main ul li, .main pre, .main blockquote{
   opacity: 1;
