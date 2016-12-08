@@ -1,0 +1,75 @@
+@import url(style.less);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oxygen');
+@import url('http://www.w3schools.com/lib/w3.css');
+
+@navbarLiColor: white;
+@backgroundColor: white;
+@mainBackgroundColor: white;
+@breadCrumbColor: white;
+@pColor: #404040;
+@headerColor: #404040;
+@bylineColor: white;
+@footerColumnColor: white;
+@siteFooterColor: white;
+@borderColor: black;
+@aColor: black;
+@NavAColor: black;
+@rm-mobile-backgroundcolor: white;
+
+@fontHeader: 'Bungee Inline', cursive;
+@fontBody: 'Oxygen', sans-serif;
+@fontFamilyHeadings: @fontHeader;
+@fontFamilyBody: @fontBody;
+
+
+body {
+  .font();
+  .typographyHeadings();
+  .typographyTextElements();
+  .typographyCodeElements();
+  .typographyListElements();
+  .typographyTableElements();
+  .typographyOtherElements();
+  background: url(../img/brickwall.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bungee {
+  font-family: @fontHeader;
+}
+
+.oxygen {
+  font-family: @fontBody;
+}
+
+.inner-wrap-flash {
+  .row {
+    background-color: transparent;
+  }
+
+  .flash-wrap {
+    position: relative;
+    img {
+      position: relative;
+      margin-left:20%;
+
+    }
+    margin-bottom: 50px;
+  }
+}
+
+.figure{
+  position: relative;
+  margin-left:-10%;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  text-align: center;
+}
+
+table {
+  margin:auto;
+}

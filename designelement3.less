@@ -1,0 +1,91 @@
+@import url(style.less);
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oxygen');
+@import url('http://www.w3schools.com/lib/w3.css');
+
+@navbarLiColor: white;
+@backgroundColor: white;
+@mainBackgroundColor: -moz-linear-gradient(right, @backgroundColor, #636363, @backgroundColor); /* For Firefox 3.6 to 15 */;
+@breadCrumbColor: white;
+@pColor: black;
+@headerColor: black;
+@bylineColor: white;
+@footerColumnColor: white;
+@siteFooterColor: white;
+@borderColor: black;
+@aColor: black;
+@NavAColor: black;
+@rm-mobile-backgroundcolor: white;
+
+@fontHeader: 'Bungee Inline', cursive;
+@fontBody: 'Oxygen', sans-serif;
+@fontFamilyHeadings: @fontHeader;
+@fontFamilyBody: @fontBody;
+
+body {
+  .font();
+  .typographyHeadings();
+  .typographyTextElements();
+  .typographyCodeElements();
+  .typographyListElements();
+  .typographyTableElements();
+  .typographyOtherElements();
+  //background: @backgroundColor; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, @backgroundColor, #636363, @backgroundColor); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, @backgroundColor, #636363, @backgroundColor); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, @backgroundColor, #636363, @backgroundColor); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, @backgroundColor, #636363, @backgroundColor); /* Standard syntax */
+}
+
+
+.bungee {
+  font-family: @fontHeader;
+}
+
+.oxygen {
+  font-family: @fontBody;
+}
+
+.outer-wrap {
+  max-width: 100%;
+}
+
+.article {
+  margin: auto;
+  width: 80%;
+}
+
+main {
+  width:80%;
+  margin:auto;
+}
+
+.flash-wrap {
+  margin: auto;
+  width: 80%;
+  display: block;
+  float: none;
+}
+
+.breadcrumb-list {
+  width: 80%;
+  margin: auto;
+}
+
+.footer {
+  background-color: transparent;
+}
+
+.site-footer {
+  background-color: transparent;
+}
+
+.content {
+  background-color: transparent;
+}
+
+.outer-wrap-breadcrumb {
+  background-color: transparent;
+  .breadcrumb-list {
+    background-color: transparent;
+  }
+}
