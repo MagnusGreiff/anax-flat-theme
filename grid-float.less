@@ -61,10 +61,12 @@
     display: inline;
     float: left;
 
-    width: @totalWidth * (((@columnWidth + @gutterWidth) * @col ) - @gutterWidth);
+    width: @totalWidth * (((@columnWidth + @gutterWidth) * @col ) - @gutterWidth) !important;
 
-    margin-left:  @totalWidth * @gutterWidth / 2;
-    margin-right: @totalWidth * @gutterWidth / 2;
+    margin-left:  @totalWidth * @gutterWidth / 2 !important;
+    margin-right: @totalWidth * @gutterWidth / 2 !important;
+
+    .clearfix();
 }
 
 

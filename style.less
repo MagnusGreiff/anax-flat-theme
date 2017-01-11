@@ -105,13 +105,13 @@ body {
   background-color: @mainBackgroundColor;
 }
 
-.route- .main .article p .index_img {
+/*.route- .main .article p .index_img {
   position: absolute;
   top: 62%;
   right: 15%;
   width: 20%;
   height: 40%;
-}
+}*/
 
 .about_content {
   width: 100%;
@@ -193,17 +193,8 @@ img {
   }
 }
 
-@media screen and (max-width: 1100px) {
-  .route- .main .article p .index_img {
-    right: 5%;
-  }
-}
 
 @media screen and (max-width: 850px) {
-  .route- .main .article p .index_img {
-    top: 0;
-  }
-
   p {
     font-size: 0.9em;
   }
@@ -221,10 +212,6 @@ img {
 }
 
 @media screen and (max-width: 700px) {
-  .route- .main .article p .index_img {
-    display: none;
-  }
-
   h1 {
     text-align: center;
   }
@@ -286,7 +273,7 @@ img {
   margin-bottom: -22px;
 }
 
-.route-, .route-about, .route-theme, .route-analysis, .route-theme, .route-theme-selector, .route-report, .route-report-intro, .route-report-kmom01, .route-report-kmom02, .route-report-kmom03, .route-report-kmom04, .route-report-kmom05, .route-report-kmom06, .route-report-kmom10, .route-analysis-intro, .route-analysis-colorscheme, .route-analysis-speed-and-usability, .route-analysis-design-principles, .route-images, .route-design-principle, .route-design-element, .route-blogg, .route-blogg-fjarde_blogginlagget, .route-blogg-tredje_blogginlagget, .route-blogg-andra_blogginlagget, .route-blogg-mitt-forsta-blogginlagg {
+.route-, .route-about, .route-theme, .route-analysis, .route-theme, .route-theme-selector, .route-report, .route-report-intro, .route-report-kmom01, .route-report-kmom02, .route-report-kmom03, .route-report-kmom04, .route-report-kmom05, .route-report-kmom06, .route-report-kmom10, .route-analysis-intro, .route-analysis-colorscheme, .route-analysis-speed-and-usability, .route-analysis-design-principles, .route-images, .route-design-principle, .route-design-element, .route-blogg, .route-blogg-fjarde_blogginlagget, .route-blogg-tredje_blogginlagget, .route-blogg-andra_blogginlagget, .route-blogg-mitt-forsta-blogginlagg, .route-analysis-usability {
   .row {
     background-color: @mainBackgroundColor;
   }
@@ -295,41 +282,47 @@ img {
 
 .route-grid {
   .outer-wrap {
-    .showGrid();
+    //.showGrid();
     background-color: @mainBackgroundColor;
     .footer {
       border:none;
-      .showGrid();
-    }
-
-    .site-footer {
-      .showGrid();
+      background-color: transparent;
+   //   .showGrid();
+      .site-footer {
+        background-color: transparent;
+      }
     }
 
   }
   .rm-desktop li {
-    background-color: @navbarLiColor;
+    background-color: transparent;
     a {
       font-size: 13px;
     }
   }
 
-  .content {
-    .showGrid();
-    background-color: @mainBackgroundColor;
+  .main {
+    background-color: transparent !important;
   }
 
+  .content {
+//    .showGrid();
+    background-color: transparent;
+  }
+
+  /*
   .flash-wrap img{
     max-width:98%;
     margin-left: 10px;
   }
+  */
 
   .outer-wrap-breadcrumb {
-    background-color: @breadCrumbColor;
+    background-color: transparent;
   }
 
   .content {
-    background-color: @mainBackgroundColor;
+    background-color: transparent;
   }
 
 }

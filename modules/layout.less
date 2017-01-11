@@ -2,9 +2,22 @@
   .row();
 }
 
-.outer-wrap {
+/*.outer-wrap {
   .container();
   max-width: 960px;
+}*/
+
+.inner-wrap {
+  .container();
+  max-width: 960px;
+}
+
+.route-grid {
+  .inner-wrap {
+    .container();
+    max-width: 960px;
+    .showGrid(960px);
+  }
 }
 
 .footer {
@@ -22,11 +35,37 @@
   }
 }
 
-.route- .main .article p {
-  .column(8);
+.route- .main {
+  .column(12);
+  .article {
+    .column(12);
+  }
 }
 
-@media (max-width: 860px) {
+.route- .main .article {
+  p {
+    .column(8);
+  }
+  .figure {
+    border: none;
+    float: none !important;
+    .column(4);
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+}
+
+.route- .main h1 {
+  .column(12);
+}
+
+.route-about h1 {
+  .column(12);
+}
+
+@media (max-width: 950px) {
   .route- .main .article {
     .column(12);
     p {
@@ -36,14 +75,14 @@
   }
 }
 
-.route- .main .article p .index_img {
+/*.route- .main .article p .index_img {
   .column(4);
   right: 0;
 
   @media (max-width: 860px) {
     display: none;
   }
-}
+}*/
 
 .site-footer {
   .column(12);
@@ -60,10 +99,6 @@
   ul li {
     display: inline;
   }
-}
-
-.flash-wrap {
-  .column(12);
 }
 
 .site-header {
@@ -96,7 +131,7 @@
   }
 }
 
-.route-report .inner-wrap-main {
+/*.route-report .inner-wrap-main {
   .column(12);
 
   .sidebar {
@@ -120,174 +155,18 @@
     }
   }
 
-}
+}*/
 
-//TODO: Make this beautiful :)
-.route-report-kmom01 .inner-wrap-main {
+.route-report, .route-report-intro, .route-report-kmom01, .route-report-kmom02, .route-report-kmom03, .route-report-kmom04, .route-report-kmom05, .route-report-kmom06, .route-report-kmom07, .route-report-kmom08, .route-report-kmom09, .route-report-kmom10 {
   .column(12);
-
   .sidebar {
     .column(3);
   }
-
   .main {
     .column(9);
-    .next-previous .next {
-      float: right;
-    }
   }
 
-  @media (max-width: 700px) {
-    .sidebar {
-      .column(12);
-    }
-
-    .main {
-      .column(12);
-    }
-  }
-}
-
-.route-report-kmom02 .inner-wrap-main {
-  .column(12);
-
-  .sidebar {
-    .column(3);
-  }
-
-  .main {
-    .column(9);
-    .next-previous .next {
-      float: right;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .sidebar {
-      .column(12);
-    }
-
-    .main {
-      .column(12);
-    }
-  }
-}
-
-.route-report-kmom03 .inner-wrap-main {
-  .column(12);
-
-  .sidebar {
-    .column(3);
-  }
-
-  .main {
-    .column(9);
-    .next-previous .next {
-      float: right;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .sidebar {
-      .column(12);
-    }
-
-    .main {
-      .column(12);
-    }
-  }
-}
-
-.route-report-kmom04 .inner-wrap-main {
-  .column(12);
-
-  .sidebar {
-    .column(3);
-  }
-
-  .main {
-    .column(9);
-    .next-previous .next {
-      float: right;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .sidebar {
-      .column(12);
-    }
-
-    .main {
-      .column(12);
-    }
-  }
-}
-
-.route-report-kmom05 .inner-wrap-main {
-  .column(12);
-
-  .sidebar {
-    .column(3);
-  }
-
-  .main {
-    .column(9);
-    .next-previous .next {
-      float: right;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .sidebar {
-      .column(12);
-    }
-
-    .main {
-      .column(12);
-    }
-  }
-}
-
-.route-report-kmom06 .inner-wrap-main {
-  .column(12);
-
-  .sidebar {
-    .column(3);
-  }
-
-  .main {
-    .column(9);
-    .next-previous .next {
-      float: right;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .sidebar {
-      .column(12);
-    }
-
-    .main {
-      .column(12);
-    }
-  }
-}
-
-.route-report-kmom10 .inner-wrap-main {
-  .column(12);
-
-  .sidebar {
-    .column(3);
-  }
-
-  .main {
-    .column(9);
-    .next-previous .next {
-      float: right;
-    }
-  }
-
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     .sidebar {
       .column(12);
     }
@@ -336,10 +215,31 @@
   text-align: center;
 }
 
+.route-theme-selector {
+  .column(12);
 
-.route-grid .wrap-all {
+  .main {
+    .column(12);
 
-  .showGrid();
+    h1 {
+      .column(12);
+    }
+
+    form {
+      .column(12);
+    }
+
+    pre {
+      .column(12);
+    }
+
+    p {
+      .column(12);
+    }
+  }
+}
+
+.route-grid {
 
   /*.inner-wrap-main {
     .showGrid();
@@ -355,37 +255,34 @@
   .after-main .content {
     display: none;
   }
-
-  .row {
-    .site-header {
-      .navbar2 ul li {
-        margin-left: 1.04166667%;
-        margin-right: 1.04166667%;
-        //background-color: transparent;
-      }
+  .site-header {
+    .navbar2 ul li {
+      margin-left: 1.04166667%;
+      margin-right: 1.04166667%;
+      //background-color: transparent;
     }
-
-    .sidebar {
-      .column(3);
-    }
-
-    .main .article {
-      .column(9);
-    }
-
-    /*.sidebar .content {
-      .showGrid();
-    }*/
   }
+
+  .sidebar {
+    .column(3);
+  }
+
+  .main .article {
+    .column(9);
+  }
+
+  /*.sidebar .content {
+    .showGrid();
+  }*/
 
   @media (max-width: 1000px) {
     .sidebar {
-      .showGrid();
+      //.showGrid();
       .column(3);
     }
 
     .main {
-      .showGrid();
+      //.showGrid();
       .column(9);
     }
   }
@@ -394,7 +291,7 @@
     .sidebar {
       .content {
         .column(12);
-        .showGrid();
+        //.showGrid();
       }
       p {
         text-align: center;
@@ -402,7 +299,7 @@
     }
 
     .main {
-      .showGrid();
+      //.showGrid();
       p {
         .column(12);
         text-align: center;
@@ -411,7 +308,7 @@
   }
 }
 
-.route-analysis-colorscheme, .route-analysis-speed-and-usability, .route-analysis-intro, .route-analysis, .route-analysis-design-principles {
+.route-analysis-colorscheme, .route-analysis-speed-and-usability, .route-analysis-intro, .route-analysis, .route-analysis-design-principles , .route-analysis-usability{
   .column(12);
   .sidebar {
     .column(3);
@@ -421,9 +318,10 @@
   }
 
   @media (max-width: 1000px) {
-    .sidebar{
+    .sidebar {
       .column(12);
     }
+
     .main {
       .column(12);
     }
@@ -441,9 +339,10 @@
   }
 
   @media (max-width: 715px) {
-    .sidebar{
+    .sidebar {
       display: none;
     }
+
     .main {
       .column(12);
     }
@@ -456,9 +355,9 @@
 
 .route-typography {
 
-  .flash-wrap img {
-    height: 140px;
-  }
+  /*  .flash-wrap img {
+      height: 140px;
+    }*/
   background-image: url(../../htdocs/img/horisontal-grid-24.png);
 
   .content {
@@ -489,11 +388,11 @@
       margin-bottom: 40px;
     }
 
-    .row {
-      margin-bottom: 10px;
-      padding-top: 1em;
-      padding-bottom: 1em;
-    }
+    /*    .row {
+          margin-bottom: 10px;
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }*/
 
     box-sizing: border-box;
 
@@ -580,4 +479,90 @@
   .next {
     float: right;
   }
+}
+
+html.hgrid .row {
+  background-image: url(../../htdocs/img/horisontal-grid-24.png);
+  .footer, .content, .site-footer, li, .main {
+    background-color: transparent !important;
+  }
+}
+
+html.vgrid .row {
+  .showGrid();
+
+  &.inner-wrap-header {
+    .showGrid();
+  }
+  .footer, .content, .site-footer, li, .main {
+    background-color: transparent !important;
+  }
+
+  .flash-wrap {
+    img {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+.flash-wrap {
+  .column(12);
+  img {
+    .column(12);
+  }
+}
+
+/*.route-report, .route-report-intro, .route-report-kmom01, .route-report-kmom02, .route-report-kmom03, .route-report-kmom04, .route-report-kmom05, .route-report-kmom06, .route-report-kmom10 {
+  .sidebar {
+    .column(12);
+  }
+}*/
+
+.route-theme {
+  h3 {
+    .column(12);
+  }
+  table {
+    .column(12);
+  }
+
+  p {
+    .column(12);
+  }
+
+  hr {
+    .column(12);
+  }
+}
+
+.route-images {
+  h1 {
+    .column(12);
+  }
+}
+
+.route-report h1, h4 {
+  .column(12);
+}
+
+.route-design-element {
+  h1 {
+    .column(12);
+  }
+
+  p {
+    .column(12);
+  }
+}
+
+.designelement1 {
+  .outer-wrap-breadcrumb {
+    background-color: transparent !important;
+  }
+}
+
+.breadcrumb-list {
+  .column(12);
 }
